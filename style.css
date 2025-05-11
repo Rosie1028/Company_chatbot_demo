@@ -1,0 +1,51 @@
+/* Main container */
+.main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Chat messages */
+.stChatMessage {
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+/* User message */
+.stChatMessage[data-testid="user"] {
+    background-color: #f0f2f6;
+}
+
+/* Assistant message */
+.stChatMessage[data-testid="assistant"] {
+    background-color: #e6f3ff;
+}
+
+/* Chat input */
+.stChatInput {
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Title and headers */
+h1, h2, h3 {
+    color: #1f2937;
+    font-weight: 600;
+}
+
+/* Links */
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Spinner */
+.stSpinner {
+    margin: 1rem 0;
+}
