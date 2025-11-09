@@ -1,99 +1,31 @@
-# Company AI Assistant Demo
+Company AI Assistant Demo
+Overview
+Company AI Assistant Demo is a lightweight chatbot application developed using Streamlit and Python. Originally built for a medical institution, it has been generalized for broader use as a company-facing assistant. The chatbot simulates an internal AI assistant capable of answering predefined questions about projects, team members, and publications. It serves as a modular, customizable proof-of-concept for building conversational interfaces in organizational settings.
 
-A simple chatbot demo that simulates a company's AI assistant. This project demonstrates a basic chatbot interface using Streamlit, with predefined responses about company projects, team members, and publications.
+You can view the repository here: Company AI Assistant Demo on GitHub
 
-## Features
+Tech Stack
+Python: Core backend logic and data handling.
 
-- Interactive chat interface
-- Predefined responses for common queries
-- Information about:
-  - Company projects
-  - Team members
-  - Publications
-  - General company information
+Streamlit: Web framework for building the interactive chat interface.
 
-## Tech Stack
+Custom CSS: Used to style and customize the frontend appearance.
 
-- **Frontend/UI**:
-  - Streamlit (Python web framework)
-  - Custom CSS for styling
-  - Responsive chat interface
+In-Memory Data Storage: Sample data stored in Python dictionaries for quick prototyping.
 
-- **Backend**:
-  - Python 3.8+
-  - In-memory data storage (sample data)
-  - Modular architecture with backend/agents separation
+Modular Architecture: Backend logic separated into agents for easy customization.
 
-- **Development Tools**:
-  - Virtual environment (venv)
-  - pip for package management
-  - Environment variables for configuration
+Features
+Interactive Chat Interface: Real-time conversation simulation using Streamlit.
 
-## Prerequisites
+Predefined Responses: Handles common queries about company operations.
 
-- Python 3.8 or higher
-- pip (Python package installer)
+Modular Design: Easily customizable sample data and response logic.
 
-## Installation
+Generalized Use Case: Adapted from a medical institution prototype to a flexible company-facing assistant.
 
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd intranet_bot
-```
-
-2. Create and activate a virtual environment:
-```bash
-# On macOS/Linux
-python -m venv venv
-source venv/bin/activate
-
-# On Windows
-python -m venv venv
-.\venv\Scripts\activate
-```
-
-3. Install the required packages:
-```bash
-pip install -r requirements.txt
-```
-
-## Running the Application
-
-1. Start the Streamlit app:
-```bash
-streamlit run app.py
-```
-
-2. Open your web browser and navigate to the URL shown in the terminal (usually http://localhost:8501)
-
-## Testing the Chatbot
-
-You can test the chatbot with various questions. Here are some examples:
-
-### Greetings
-- "Hello"
-- "Hi there"
-- "Hey"
-
-### Projects
-- "What projects are you working on?"
-- "Tell me about your initiatives"
-- "What's the status of current projects?"
-
-### Team
-- "Who are the team members?"
-- "Tell me about your staff"
-- "Who works in the company?"
-
-### Publications
-- "What publications do you have?"
-- "Tell me about your research"
-- "What papers have you published?"
-
-## Project Structure
-
-```
+Project Structure
+Code
 intranet_bot/
 ├── app.py              # Main Streamlit application
 ├── style.css           # Custom styling
@@ -101,27 +33,47 @@ intranet_bot/
 └── backend/
     └── agents/
         └── agent.py    # Chatbot logic and responses
-```
+Installation
+Prerequisites
+Python 3.8 or higher
 
-## Customization
+pip (Python package installer)
 
-You can customize the chatbot by modifying the following:
+Setup
+bash
+git clone https://github.com/Rosie1028/Company_chatbot_demo.git
+cd intranet_bot
 
-1. Sample data in `backend/agents/agent.py`:
-   - Update `SAMPLE_DATA` to include your own projects, team members, and publications
-   - Modify `RESPONSES` to change the chatbot's response patterns
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # macOS/Linux
+.\venv\Scripts\activate   # Windows
 
-2. Styling in `style.css`:
-   - Customize the appearance of the chat interface
-   - Modify colors, spacing, and other visual elements
+# Install dependencies
+pip install -r requirements.txt
+Run the Application
+bash
+streamlit run app.py
+Then open your browser to the URL shown in the terminal (usually http://localhost:8501).
 
-## Contributing
+Testing the Chatbot
+Try asking questions like:
 
-Feel free to submit issues and enhancement requests!
+Greetings: "Hello", "Hi there", "Hey"
 
-## License
+Projects: "What projects are you working on?", "Tell me about your initiatives"
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+Team: "Who are the team members?", "Tell me about your staff"
 
+Publications: "What publications do you have?", "What papers have you published?"
 
+Customization
+Sample Data: Modify SAMPLE_DATA in backend/agents/agent.py to reflect your own organization.
+
+Response Patterns: Adjust RESPONSES in the same file to change how the chatbot replies.
+
+Styling: Edit style.css to customize colors, layout, and visual elements.
+
+License
+This project is licensed under the MIT License.
 
